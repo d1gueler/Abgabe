@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText);
         int number = Integer.parseInt(editText.getText().toString());
         int summe = 0;
-
         while (0 != number) {
 
             summe = summe + (number % 10);
             number = number / 10;
         }
+
 
         String bin=(Integer.toBinaryString(summe));
 
